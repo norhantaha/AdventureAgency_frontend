@@ -1,0 +1,489 @@
+
+*{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background: url(../images/b1.jpg) no-repeat center/cover;
+    font-family:sans-serif;
+}
+.logo{
+    font-family:cursive;
+    padding: 0px 5px;
+}
+nav{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    color: honeydew;
+
+}
+nav ul{
+    width: 350px;
+    min-height: 50px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav ul li a{
+    padding: 0;
+    margin: 0;
+    color: honeydew;
+    text-decoration: none;
+
+}
+nav ul li:hover a{
+    color: #ffc007;
+}
+.box1{
+    width: 300px;
+    height: 150px;
+    border: 5px solid #ffc007;
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+
+}
+.box2{
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    z-index: 2;
+    top: 45%;
+    left: 30%;
+    background:rgba(255, 255, 255, 0.829);
+    padding: 30px;
+}
+.boldtext{
+    color: #24d080;
+    align-self: center;
+    margin-top: 20px;
+    font-size: 170%;
+    font-weight: bold;
+}
+.section1{
+    width: 60%;
+    min-height: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    perspective: 350px;
+}
+.section1 > div{
+    width: 200px;
+    height: 250px;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 1px 1px 5px 2px grey;   
+}
+.front{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: absolute;
+
+}
+.card:hover{
+    transform:rotateY(180deg);
+}
+.front img{
+    width: 100%;
+    height: 100%;
+}
+.section2{
+    width: 100%;
+    min-height: 400px;
+    background:url(../images/b3.jpg) no-repeat center/cover;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.section2 ul{
+    list-style: none;
+    color: honeydew;
+    display: flex;
+    min-height: 140px;
+    width: 60%;
+    padding: 0%;
+    margin: 0%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section2 ul li{
+    height: 130px;
+    min-width: 130px;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 130px;
+}
+.section2 ul li {
+    color: #ffc007;
+    font-weight: bold;
+}
+.section2 > div{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+span{
+    color: #ffc007;
+    font-size: 150%;
+    font-weight: bolder;
+
+}
+.boldspan{
+    color: black;
+    font-size: 100%;
+    font-weight: bolder;
+}
+.section3{
+    width: 60%;
+    min-height:400px;
+    position: relative;
+    padding-top: 10px;
+    margin: auto;
+}
+.partitions{
+    width: 100%;
+    min-height: 320px;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.partitions > div{
+    width: 290px;
+    min-height: 130px;
+    top: 20px;
+    padding-left: 5px;
+    padding-top: 10px;
+    box-shadow: 1px 1px 5px 2px grey;  
+    border-radius: 3px;
+}
+.title1{
+    text-align: center;
+    font-weight: bold;
+
+}
+.spangreen{
+    color: #00d07d;
+    text-transform: capitalize;
+}
+.section4{
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    background-color: #eaeaea;
+
+}
+
+.section4 img{
+    width: max(45%,700px);
+    height: 350px;
+    z-index: 1;
+}
+.sec4block{
+    background-color: #eaeaea;
+    width: max(45%,700px);
+    height: 270px;
+    z-index: 1;
+    padding-top: 80px;
+    padding-left: 20px;
+
+}
+.emptyblock{
+    width: 300px;
+    height: 150px;
+    border: 3px solid #00d07d;
+    z-index: 3;
+    position: absolute;
+    left: 33%;
+    top: 18%;
+}
+.section5{
+    width: 55%;
+    min-height:500px;
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+
+}
+.pics{
+    
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.pic1, .pic2, .pic5, .pic6{
+    height: 200px;
+    width: 200px;
+}
+.pic3, .pic4{
+    height: 200px;
+    width: 400px;
+}
+.section5 img{
+    width: 100%;
+    height: 100%;
+}
+.section6{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #eaeaea;
+    color: #909199;
+
+}
+.section6 > div{
+    width: max(45%,740px);
+    min-height: 300px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.block2{
+    background: url(../images/b4.jpg) no-repeat center/cover;
+}
+.block3{
+    background: url(../images/g6.jpg) no-repeat center/cover;
+}
+
+.section7{
+    width: 80%;
+    min-height: 400px;
+    margin: auto;
+    position: relative;
+    margin-top: 25px;
+  
+}
+.section7 > div{
+    text-align: center;
+    font-weight: bold;
+}
+.sec7blocks{
+    width: 100%;
+    min-height: 320px;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.sec7blocks > div{
+    width: 270px;
+    min-height: 300px;
+    padding: 1%;
+    margin: 0%;
+   text-align: left;
+   font-weight: normal;
+
+}
+figure{
+    width: 90%;
+    padding: 0%;
+    margin: auto;
+
+    
+}
+ figure img{
+    margin: auto;
+    width: 100%;
+    height: 180px;
+    background-color: brown;
+}
+figcaption{
+    color: #ffc007 ;
+}
+.spangreen2{
+  color:#00d07d ; 
+  font-weight: bold;
+  font-size: medium; 
+
+}
+.section8{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    background: url(../images/b4.jpg) no-repeat center/cover;
+    color: white;
+
+}
+.section8 > div{
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    font-size: large;
+}
+#sec8feild{
+    height: 60px;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.274);
+
+}
+#sec8feild input{
+    padding: 0%;
+    margin: 0%;
+    width: 200px;
+    height: 30px;
+}
+fieldset > div{
+    padding: 0%;
+    margin: 0%;
+    background-color: #01d07e;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+
+}
+.section9{
+    width: 75%;
+    min-height: 400px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    font-size: large;
+    text-transform: capitalize;
+}
+.section9 > div{
+    padding-top: 10px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+}
+map iframe{
+    width: 600px;
+    height: 300px;
+    padding: 0%;
+    margin: 0%;
+}
+.info{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+}
+.info > fieldset{
+    width: 245px;
+    height: 40px;
+    border-style: none;
+    padding: 0%;
+    margin: 0%;
+    
+
+}
+fieldset > input{
+    width: 100%;
+    height: 80%;
+}
+#massegebox{
+    width: 100%;
+    height: 150px;
+
+}
+#massege{
+    width: 100%;
+    height: 150px;
+}
+#send{
+    width: 100%;
+    background-color:  #01d07e;
+}
+#sendbox{
+    width: 100%;
+
+}
+.section10{
+    background-color: #313131;
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    line-height: 30px;
+}
+.section10 a{
+    color: red;
+    border:1px solid red;
+    border-radius: 50%;
+    padding: 8px 8px;
+}
+.greyspan{
+    color: rgb(185, 185, 185);
+    font-size:medium;
+    
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+:root{
+    scroll-behavior: smooth;
+}
